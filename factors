@@ -12,6 +12,9 @@ def factors(n):
 file = open(sys.argv[1], 'r')
 
 for num in file:
-    result = factors(int(num))
-    if result:
-        print(result)
+    try:
+        result = factors(int(num))
+        if result:
+            print(result)
+    except:
+        pass
